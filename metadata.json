@@ -1,0 +1,7 @@
+{
+  "name": "Shafa M Ahmad - Personal Portfolio",
+  "description": "A world-class developer portfolio featuring project showcases, skill visualizations, and an integrated Gemini-powered AI assistant.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
