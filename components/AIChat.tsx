@@ -80,9 +80,9 @@ const AIChat: React.FC = () => {
               <div className="flex justify-start">
                 <div className="bg-slate-800 p-4 rounded-2xl">
                   <div className="flex gap-1">
-                    <div className="w-1.5 h-1.5 bg-slate-500 rounded-full animate-bounce"></div>
-                    <div className="w-1.5 h-1.5 bg-slate-500 rounded-full animate-bounce [animation-delay:-0.15s]"></div>
-                    <div className="w-1.5 h-1.5 bg-slate-500 rounded-full animate-bounce [animation-delay:-0.3s]"></div>
+                    <div className="w-1.5 h-1.5 bg-[#d7d2f7] rounded-full animate-bounce"></div>
+                    <div className="w-1.5 h-1.5 bg-[#d7d2f7] rounded-full animate-bounce [animation-delay:-0.15s]"></div>
+                    <div className="w-1.5 h-1.5 bg-[#d7d2f7] rounded-full animate-bounce [animation-delay:-0.3s]"></div>
                   </div>
                 </div>
               </div>

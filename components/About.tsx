@@ -12,9 +12,9 @@ const About: React.FC = () => {
             <div className="relative group">
               <div className="absolute -inset-2 bg-gradient-to-r from-[#d7d2f7] to-indigo-500 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
               <img 
-                src="https://images.unsplash.com/photo-1454165833767-027ffea9e77b?auto=format&fit=crop&q=80&w=800" 
-                alt="Workspace" 
-                className="relative rounded-2xl w-full object-cover shadow-2xl grayscale hover:grayscale-0 transition-all duration-500"
+                src="https://res.cloudinary.com/damdnzir0/image/upload/v1772093423/about_l8nv0h.png" 
+                alt="Shafa Millah Ahmad" 
+                className="relative rounded-2xl w-full object-cover shadow-2xl transition-all duration-500"
               />
             </div>
           </div>

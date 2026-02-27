@@ -17,8 +17,10 @@ export interface Project {
 export interface Skill {
   name: string;
   level: number;
-  category: 'Core' | 'Data' | 'Management' | 'Communication';
+  category: 'Core' | 'Data' | 'Management' | 'Communication' | 'Technical' | 'Strategy';
   icon: string;
+  explanation?: string;
+  tools?: string[];
 }
 
 export interface NavItem {

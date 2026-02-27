@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
                 <a href="https://www.linkedin.com/in/shafa-millah-ahmad/" target="_blank" className="text-2xl text-slate-400 hover:text-[#d7d2f7] transition-colors"><i className='bx bxl-linkedin'></i></a>
                 <a href="https://t.me/Shafahmad25XX" target="_blank" className="text-2xl text-slate-400 hover:text-[#d7d2f7] transition-colors"><i className='bx bxl-telegram'></i></a>
                 <a href="https://www.instagram.com/emilio.ahmd/" target="_blank" className="text-2xl text-slate-400 hover:text-[#d7d2f7] transition-colors"><i className='bx bxl-instagram'></i></a>
-                <a href="https://github.com/ShafahmadxX69" target="_blank" className="text-2xl text-slate-400 hover:text-white transition-colors"><i className='bx bxl-github'></i></a>
+                <a href="https://github.com/ShafahmadxX69" target="_blank" className="text-2xl text-slate-400 hover:text-[#d7d2f7] transition-colors"><i className='bx bxl-github'></i></a>
               </div>
             </div>
           </div>
@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
             <div className="relative w-[512px] h-[512px] md:w-[640px] md:h-[640px]">
               <div className="absolute inset-0 bg-gradient-to-br from-[#d7d2f7] to-indigo-600 rounded-[30%_70%_70%_30%/30%_30%_70%_70%] animate-[blob_10s_infinite_alternate] opacity-20"></div>
               <img 
-                src="https://picsum.photos/seed/shafa-profile/500/500" 
+                src="https://res.cloudinary.com/damdnzir0/image/upload/v1772093423/shafa-profile_ohm2g3.png" 
                 alt="Shafa Millah Ahmad" 
                 className="relative z-10 w-full h-full object-cover rounded-[30%_70%_70%_30%/30%_30%_70%_70%] shadow-2xl border-4 border-white/5 animate-[blob_7s_infinite_alternate]"
               />

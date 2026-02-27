@@ -11,12 +11,70 @@ export const NAV_ITEMS: NavItem[] = [
 ];
 
 export const SKILLS: Skill[] = [
-  { name: 'PPIC & Procurement', level: 90, category: 'Core', icon: 'bx-bar-chart-alt' },
-  { name: 'Excel (Pivot/VBA)', level: 95, category: 'Data', icon: 'bx-data' },
-  { name: 'Google Apps Script', level: 90, category: 'Data', icon: 'bx-cloud' },
-  { name: 'Admin Automation', level: 95, category: 'Core', icon: 'bx-task' },
-  { name: 'Team Supervision', level: 85, category: 'Management', icon: 'bx-group' },
-  { name: 'English Proficiency', level: 90, category: 'Communication', icon: 'bx-message-rounded-dots' },
+  { 
+    name: 'PPIC & Procurement', 
+    level: 90, 
+    category: 'Core', 
+    icon: 'bx-bar-chart-alt',
+    explanation: 'Strategic production planning and inventory control management for optimized output.',
+    tools: ['ERP Systems', 'SAP', 'Inventory Tracking Software']
+  },
+  { 
+    name: 'Excel (Pivot/VBA)', 
+    level: 95, 
+    category: 'Data', 
+    icon: 'bx-data',
+    explanation: 'Expertise in building complex spreadsheets, automation via VBA, and data analysis through Pivot tables.',
+    tools: ['MS Excel', 'VBA Macros', 'Power Pivot']
+  },
+  { 
+    name: 'Google Apps Script', 
+    level: 90, 
+    category: 'Data', 
+    icon: 'bx-cloud',
+    explanation: 'Custom automation for Google Workspace to streamline cross-platform workflows.',
+    tools: ['Google Sheets', 'App Script Editor', 'JSON APIs']
+  },
+  { 
+    name: 'Forecasting', 
+    level: 92, 
+    category: 'Strategy', 
+    icon: 'bx-trending-up',
+    explanation: 'Predicting future demand and supply trends using historical data and statistical models.',
+    tools: ['Time Series Analysis', 'Moving Averages', 'MS Excel Solver']
+  },
+  { 
+    name: 'Analyzing', 
+    level: 94, 
+    category: 'Data', 
+    icon: 'bx-search-alt',
+    explanation: 'Deep diving into complex datasets to extract actionable business insights.',
+    tools: ['Power BI', 'SQL', 'Data Cleaning Tools']
+  },
+  { 
+    name: 'Tech Savvy', 
+    level: 96, 
+    category: 'Technical', 
+    icon: 'bx-chip',
+    explanation: 'Rapid adaptation to new software and hardware environments with a problem-solving mindset.',
+    tools: ['Cloud Computing', 'AI Tools', 'Modern SaaS Platforms']
+  },
+  { 
+    name: 'Supply Chain Opt.', 
+    level: 88, 
+    category: 'Strategy', 
+    icon: 'bx-link',
+    explanation: 'Optimizing the end-to-end flow of goods to reduce costs and improve delivery times.',
+    tools: ['Logistics Software', 'Route Optimization', 'Warehouse Management']
+  },
+  { 
+    name: 'Admin Automation', 
+    level: 95, 
+    category: 'Core', 
+    icon: 'bx-task',
+    explanation: 'Eliminating repetitive tasks through "one-click" systems and automated reporting.',
+    tools: ['Zapier', 'Python Scripts', 'Workflow Builders']
+  },
 ];
 
 export const PROJECTS: Project[] = [
@@ -26,7 +84,7 @@ export const PROJECTS: Project[] = [
     title: 'Production Planning and Inventory Control',
     duration: 'Feb 2024 - Currently working',
     description: 'Strategic production planning and inventory control management for optimized output.',
-    image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800',
+    image: 'https://res.cloudinary.com/damdnzir0/image/upload/v1772183285/Web1_igyx3i.png',
     tags: ['Planning', 'Inventory', 'Operations'],
     jobdesks: [
       'Manage production schedules and control materials according to order requirements.',
@@ -50,7 +108,7 @@ export const PROJECTS: Project[] = [
     title: 'Entrepreneur / Online Seller',
     duration: 'Aug 2022 - Feb 2024',
     description: 'Managing end-to-end e-commerce operations across multiple platforms.',
-    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=800',
+    image: 'https://res.cloudinary.com/damdnzir0/image/upload/v1772183285/Screenshot_2026-02-27_130016_pwy4qe.png',
     tags: ['E-commerce', 'Sales', 'Marketing'],
     jobdesks: [
       'Built and managed an online business selling 24 types of wood products, reaching thousands of units sold.',
@@ -72,7 +130,7 @@ export const PROJECTS: Project[] = [
     title: 'Professional Translator Freelance',
     duration: 'Jun 2022 - Oct 2023',
     description: 'Accurate and context-aware translation services bridging communication gaps.',
-    image: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&q=80&w=800',
+    image: 'https://res.cloudinary.com/damdnzir0/image/upload/v1772183286/Screenshot_2026-02-27_160818_vqtyhz.png',
     tags: ['Translation', 'Linguistics'],
     jobdesks: [
       'Translated 200+ documents across education, business, legal, and technical fields (EN ↔ ID), ensuring client satisfaction.',
@@ -116,7 +174,7 @@ export const PROJECTS: Project[] = [
     title: 'Outlet Supervisor',
     duration: 'Feb 2019 – Jan 2021',
     description: 'End-to-end management of retail outlets, focusing on quality control and team productivity.',
-    image: 'https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&q=80&w=800',
+    image: 'https://res.cloudinary.com/damdnzir0/image/upload/v1772183285/Screenshot_2026-02-27_145852_f1fry1.png',
     tags: ['Leadership', 'Management'],
     jobdesks: [
       'Lead a team of teaching assistants in designing work programs and completing them together.',

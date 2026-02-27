@@ -101,7 +101,7 @@ const Contact: React.FC = () => {
                 className={`w-full py-4 rounded-xl font-bold transition-all ${isSent ? 'bg-indigo-500' : 'bg-[#d7d2f7] hover:bg-[#c3bdf0]'} ${isSent ? 'text-white' : 'text-[#1a1b2e]'} flex items-center justify-center gap-2`}
               >
                 {isSubmitting ? (
-                  <span className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></span>
+                  <span className="w-5 h-5 border-2 border-white/30 border-t-[#d7d2f7] rounded-full animate-spin"></span>
                 ) : isSent ? (
                   <>Sent Successfully <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg></>
                 ) : 'Send Message'}
