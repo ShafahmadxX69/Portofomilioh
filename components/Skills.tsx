@@ -23,11 +23,11 @@ const CATEGORY_COLORS: Record<string, string> = {
 
 // Grouping skills into 5 dimensions to match the pentagon shape in the image
 const CHART_DIMENSIONS = [
-  { name: 'Efficiency', skills: ['Admin Automation', 'Supply Chain Opt.'] },
-  { name: 'Analytical', skills: ['Analyzing', 'Excel (Pivot/VBA)'] },
-  { name: 'Technical', skills: ['Tech Savvy', 'Google Apps Script'] },
-  { name: 'Strategic', skills: ['Forecasting'] },
-  { name: 'Operational', skills: ['PPIC & Procurement'] }
+  { name: 'Strategic', key: 'strategic' },
+  { name: 'Analytical', key: 'analytical' },
+  { name: 'Operational', key: 'operational' },
+  { name: 'Leadership', key: 'leadership' },
+  { name: 'Risk', key: 'risk' }
 ];
 
 const Skills: React.FC = () => {
@@ -35,18 +35,18 @@ const Skills: React.FC = () => {
 
   // Calculate values for the 5 dimensions dynamically based on hover
   const chartData = CHART_DIMENSIONS.map(dim => {
-    const isDimHovered = hoveredSkill && dim.skills.includes(hoveredSkill.name);
-    const relevantSkills = SKILLS.filter(s => dim.skills.includes(s.name));
-    const avgLevel = relevantSkills.reduce((acc, s) => acc + s.level, 0) / (relevantSkills.length || 1);
+    // If a skill is hovered, show its specific behaviour value
+    // Otherwise show a default average or baseline
+    const value = hoveredSkill?.behaviours 
+      ? (hoveredSkill.behaviours as any)[dim.key] 
+      : 70; // Default baseline when no skill is hovered
     
     return {
       subject: dim.name,
-      // If a skill in this dimension is hovered, show its specific level
-      // Otherwise show the average level for this dimension
-      A: isDimHovered ? hoveredSkill.level : avgLevel, 
+      A: value, 
       B: 80, // Static benchmark for visual comparison
       fullMark: 100,
-      isHighlighted: isDimHovered
+      isHighlighted: !!hoveredSkill
     };
   });
 
@@ -88,7 +88,7 @@ const Skills: React.FC = () => {
                   
                   <div className="flex justify-between items-center mb-1">
                     <span className="text-[10px] text-slate-500 uppercase tracking-widest font-bold">{skill.category}</span>
-                    <span className="text-xs font-bold" style={{ color: CATEGORY_COLORS[skill.category] }}>{skill.level}%</span>
+                    {/* Numbers hidden as requested */}
                   </div>
                   
                   <div className="h-1.5 w-full bg-slate-800 rounded-full overflow-hidden">
@@ -137,14 +137,13 @@ const Skills: React.FC = () => {
                   dataKey="subject" 
                   tick={(props) => {
                     const { x, y, payload } = props;
-                    const isHighlighted = chartData.find(d => d.subject === payload.value)?.isHighlighted;
                     return (
                       <text 
                         x={x} 
                         y={y} 
-                        fill={isHighlighted ? '#d7d2f7' : '#f8fafc'} 
+                        fill={hoveredSkill ? '#d7d2f7' : '#f8fafc'} 
                         fontSize={12} 
-                        fontWeight={isHighlighted ? 900 : 700}
+                        fontWeight={hoveredSkill ? 900 : 700}
                         textAnchor="middle"
                         className="transition-all duration-300"
                       >
@@ -156,7 +155,7 @@ const Skills: React.FC = () => {
                 <PolarRadiusAxis 
                   angle={90} 
                   domain={[0, 100]} 
-                  tick={{ fill: '#94a3b8', fontSize: 10 }}
+                  tick={false} // Numbers hidden as requested
                   axisLine={true}
                   stroke="#2d2e4a"
                 />
@@ -180,6 +179,7 @@ const Skills: React.FC = () => {
                   fill="#6366f1"
                   fillOpacity={hoveredSkill ? 0.8 : 0.5}
                   strokeWidth={hoveredSkill ? 4 : 2}
+                  dot={hoveredSkill ? { r: 4, fill: '#fff', stroke: '#6366f1', strokeWidth: 2 } : false}
                   animationDuration={500}
                 />
 
@@ -190,6 +190,8 @@ const Skills: React.FC = () => {
                     borderRadius: '12px',
                     color: '#f8fafc'
                   }}
+                  itemStyle={{ color: '#d7d2f7' }}
+                  formatter={(value) => [`${value}%`, 'Proficiency']}
                 />
               </RadarChart>
             </ResponsiveContainer>

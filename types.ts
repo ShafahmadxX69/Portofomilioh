@@ -21,6 +21,13 @@ export interface Skill {
   icon: string;
   explanation?: string;
   tools?: string[];
+  behaviours?: {
+    strategic: number;
+    analytical: number;
+    operational: number;
+    leadership: number;
+    risk: number;
+  };
 }
 
 export interface NavItem {

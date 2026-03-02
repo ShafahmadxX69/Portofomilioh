@@ -17,23 +17,8 @@ export const SKILLS: Skill[] = [
     category: 'Core', 
     icon: 'bx-bar-chart-alt',
     explanation: 'Strategic production planning and inventory control management for optimized output.',
-    tools: ['ERP Systems', 'SAP', 'Inventory Tracking Software']
-  },
-  { 
-    name: 'Excel (Pivot/VBA)', 
-    level: 95, 
-    category: 'Data', 
-    icon: 'bx-data',
-    explanation: 'Expertise in building complex spreadsheets, automation via VBA, and data analysis through Pivot tables.',
-    tools: ['MS Excel', 'VBA Macros', 'Power Pivot']
-  },
-  { 
-    name: 'Google Apps Script', 
-    level: 90, 
-    category: 'Data', 
-    icon: 'bx-cloud',
-    explanation: 'Custom automation for Google Workspace to streamline cross-platform workflows.',
-    tools: ['Google Sheets', 'App Script Editor', 'JSON APIs']
+    tools: ['ERP Systems', 'SAP', 'Inventory Tracking Software'],
+    behaviours: { strategic: 88, analytical: 90, operational: 95, leadership: 85, risk: 92 }
   },
   { 
     name: 'Forecasting', 
@@ -41,7 +26,26 @@ export const SKILLS: Skill[] = [
     category: 'Strategy', 
     icon: 'bx-trending-up',
     explanation: 'Predicting future demand and supply trends using historical data and statistical models.',
-    tools: ['Time Series Analysis', 'Moving Averages', 'MS Excel Solver']
+    tools: ['Time Series Analysis', 'Moving Averages', 'MS Excel Solver'],
+    behaviours: { strategic: 92, analytical: 94, operational: 88, leadership: 80, risk: 90 }
+  },
+  { 
+    name: 'Excel (Pivot/VBA)', 
+    level: 95, 
+    category: 'Data', 
+    icon: 'bx-data',
+    explanation: 'Expertise in building complex spreadsheets, automation via VBA, and data analysis through Pivot tables.',
+    tools: ['MS Excel', 'VBA Macros', 'Power Pivot'],
+    behaviours: { strategic: 82, analytical: 96, operational: 90, leadership: 75, risk: 85 }
+  },
+  { 
+    name: 'Google Apps Script', 
+    level: 90, 
+    category: 'Data', 
+    icon: 'bx-cloud',
+    explanation: 'Custom automation for Google Workspace to streamline cross-platform workflows.',
+    tools: ['Google Sheets', 'App Script Editor', 'JSON APIs'],
+    behaviours: { strategic: 85, analytical: 92, operational: 90, leadership: 80, risk: 88 }
   },
   { 
     name: 'Analyzing', 
@@ -49,7 +53,8 @@ export const SKILLS: Skill[] = [
     category: 'Data', 
     icon: 'bx-search-alt',
     explanation: 'Deep diving into complex datasets to extract actionable business insights.',
-    tools: ['Power BI', 'SQL', 'Data Cleaning Tools']
+    tools: ['Power BI', 'SQL', 'Data Cleaning Tools'],
+    behaviours: { strategic: 85, analytical: 98, operational: 85, leadership: 70, risk: 80 }
   },
   { 
     name: 'Tech Savvy', 
@@ -57,7 +62,8 @@ export const SKILLS: Skill[] = [
     category: 'Technical', 
     icon: 'bx-chip',
     explanation: 'Rapid adaptation to new software and hardware environments with a problem-solving mindset.',
-    tools: ['Cloud Computing', 'AI Tools', 'Modern SaaS Platforms']
+    tools: ['Cloud Computing', 'AI Tools', 'Modern SaaS Platforms'],
+    behaviours: { strategic: 90, analytical: 90, operational: 95, leadership: 80, risk: 85 }
   },
   { 
     name: 'Supply Chain Opt.', 
@@ -65,7 +71,8 @@ export const SKILLS: Skill[] = [
     category: 'Strategy', 
     icon: 'bx-link',
     explanation: 'Optimizing the end-to-end flow of goods to reduce costs and improve delivery times.',
-    tools: ['Logistics Software', 'Route Optimization', 'Warehouse Management']
+    tools: ['Logistics Software', 'Route Optimization', 'Warehouse Management'],
+    behaviours: { strategic: 90, analytical: 92, operational: 94, leadership: 87, risk: 91 }
   },
   { 
     name: 'Admin Automation', 
@@ -73,7 +80,8 @@ export const SKILLS: Skill[] = [
     category: 'Core', 
     icon: 'bx-task',
     explanation: 'Eliminating repetitive tasks through "one-click" systems and automated reporting.',
-    tools: ['Zapier', 'Python Scripts', 'Workflow Builders']
+    tools: ['Zapier', 'Python Scripts', 'Workflow Builders'],
+    behaviours: { strategic: 85, analytical: 92, operational: 90, leadership: 80, risk: 88 }
   },
 ];
 
@@ -84,7 +92,7 @@ export const PROJECTS: Project[] = [
     title: 'Production Planning and Inventory Control',
     duration: 'Feb 2024 - Currently working',
     description: 'Strategic production planning and inventory control management for optimized output.',
-    image: 'https://res.cloudinary.com/damdnzir0/image/upload/v1772183285/Web1_igyx3i.png',
+    image: 'https://res.cloudinary.com/damdnzir0/image/upload/v1772183284/Screenshot_2026-02-27_130144_o0jpll.png',
     tags: ['Planning', 'Inventory', 'Operations'],
     jobdesks: [
       'Manage production schedules and control materials according to order requirements.',

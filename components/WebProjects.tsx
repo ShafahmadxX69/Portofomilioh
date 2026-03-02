@@ -19,7 +19,7 @@ const WEB_PROJECTS: WebProject[] = [
     url: 'https://ppicbestbase.vercel.app/',
     description: 'A comprehensive dashboard for Production Planning and Inventory Control, streamlining material tracking and production scheduling.',
     longDescription: 'This dashboard serves as a central hub for manufacturing operations. It integrates real-time material tracking with production schedules, allowing managers to identify bottlenecks before they occur. The system features automated inventory alerts, production output visualization, and historical data analysis to improve forecasting accuracy.',
-    image: 'https://res.cloudinary.com/damdnzir0/image/upload/v1772183284/Screenshot_2026-02-27_130144_o0jpll.png',
+    image: 'https://res.cloudinary.com/damdnzir0/image/upload/v1772183285/Web1_igyx3i.png',
     features: ['Material Tracking', 'Production Scheduling', 'Inventory Analytics'],
     techStack: ['React', 'Tailwind CSS', 'Chart.js', 'Firebase']
   },
